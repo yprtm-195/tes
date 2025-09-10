@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Yohandi Pratama Putra</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --light-gray: #f8f9fa;
+            --dark-gray: #343a40;
+            --text-color: #555;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.8;
+            background-color: var(--light-gray);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+        }
+        .wrapper {
+            display: flex;
+            max-width: 1000px;
+            margin: 40px auto;
+            background: #fff;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .sidebar {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 40px;
+            width: 35%;
+            box-sizing: border-box;
+        }
+        .main-content {
+            padding: 40px;
+            width: 65%;
+            box-sizing: border-box;
+        }
+        .photo-container {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid var(--secondary-color);
+            object-fit: cover;
+        }
+        .sidebar h2 {
+            font-family: 'Lora', serif;
+            color: #fff;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-top: 0;
+            font-size: 1.5em;
+        }
+        .contact-info p {
+            margin: 15px 0;
+            display: flex;
+            align-items: center;
+        }
+        .contact-info svg {
+            width: 20px;
+            height: 20px;
+            margin-right: 15px;
+            fill: #fff;
+        }
+        .skills ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .skills li {
+            background: var(--secondary-color);
+            color: #fff;
+            padding: 8px 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            font-weight: 500;
+        }
+        .main-header h1 {
+            font-family: 'Lora', serif;
+            font-size: 3em;
+            margin: 0 0 5px 0;
+            color: var(--dark-gray);
+        }
+        .main-header p {
+            font-size: 1.4em;
+            margin: 0;
+            color: var(--secondary-color);
+            font-weight: 500;
+        }
+        .main-content .section {
+            margin-top: 40px;
+        }
+        .main-content h2 {
+            font-family: 'Lora', serif;
+            font-size: 1.8em;
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .job {
+            margin-bottom: 25px;
+        }
+        .job h3 {
+            font-size: 1.3em;
+            color: var(--dark-gray);
+            margin: 0;
+            font-weight: 500;
+        }
+        .job .company {
+            font-size: 1.1em;
+            color: var(--secondary-color);
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+        .job .date {
+            font-style: italic;
+            color: #777;
+            margin-bottom: 10px;
+        }
+        .main-content ul {
+            padding-left: 20px;
+        }
+        .main-content li {
+            margin-bottom: 10px;
+        }
+
+        @media print {
+            body {
+                background-color: #fff;
+                margin: 0;
+                padding: 0;
+                font-size: 10pt;
+            }
+            .wrapper {
+                display: block;
+                box-shadow: none;
+                margin: 0;
+                max-width: 100%;
+                border-radius: 0;
+            }
+            .sidebar, .main-content {
+                width: 100%;
+                display: block;
+                box-sizing: border-box;
+                float: none;
+            }
+            .sidebar {
+                background-color: #fff !important;
+                color: #000 !important;
+                padding: 20px 40px;
+            }
+            .sidebar svg {
+                fill: #000 !important;
+            }
+            .skills ul {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .skills li {
+                background: #eee !important;
+                color: #000 !important;
+                border: 1px solid #ccc;
+                margin: 5px;
+            }
+            .profile-photo {
+                width: 120px;
+                height: 120px;
+            }
+            .main-content {
+                padding: 20px 40px;
+            }
+            .job, .section {
+                page-break-inside: avoid;
+            }
+            h1, h2, h3, p {
+                orphans: 3;
+                widows: 3;
+            }
+            .main-header p {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <aside class="sidebar">
+            <div class="photo-container">
+                <img src="pas foto.jpg" alt="Pas Foto" class="profile-photo">
+            </div>
+            <div class="contact-info">
+                <h2>Kontak</h2>
+                <p><svg viewBox="0 0 24 24"><path d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"/></svg> 0813-7408-1330</p>
+                <p><svg viewBox="0 0 24 24"><path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"/></svg> yohandi.pratama@gmail.com</p>
+            </div>
+            <div class="skills">
+                <h2>Keahlian</h2>
+                <ul>
+                    <li>Kepemimpinan & Tim</li>
+                    <li>Manajemen Retail</li>
+                    <li>Analisis Penjualan & Stok</li>
+                    <li>Strategi Promosi</li>
+                    <li>Microsoft Excel</li>
+                    <li>Microsoft PowerPoint</li>
+                    <li>Google Spreadsheet</li>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="main-header">
+                <h1>Yohandi Pratama Putra</h1>
+                <p>Retail & Sales Supervisor</p>
+            </header>
+
+            <div class="section">
+                <h2>PROFIL</h2>
+                <p>
+                    Profesional bidang retail dengan pengalaman 10+ tahun, terbukti mampu memimpin tim, meningkatkan penjualan, dan mengelola operasional secara efisien. Memiliki kemampuan analisis yang kuat untuk strategi promosi dan manajemen stok. Berpengalaman sebagai Supervisor, Kepala Toko, dan Merchandiser, siap untuk memberikan kontribusi nyata pada pertumbuhan perusahaan.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>PENGALAMAN KERJA</h2>
+                <div class="job">
+                    <p class="company">PT Marcosentra Niagaboga (Cimory Group)</p>
+                    <h3>Merchandiser</h3>
+                    <p class="date">Agustus 2023 - Sekarang</p>
+                    <ul>
+                        <li>Mengelola penataan dan visibilitas produk di berbagai modern trade channel untuk memaksimalkan daya tarik pelanggan.</li>
+                        <li>Berhasil melakukan negosiasi dengan pihak toko untuk mendapatkan posisi display strategis, yang berkontribusi pada peningkatan penjualan.</li>
+                        <li>Memastikan ketersediaan stok (availability) dan mengelola retur produk secara efisien untuk menjaga kualitas dan perputaran barang.</li>
+                        <li>Melakukan monitoring penjualan dan retur secara rutin untuk analisis tren dan pelaporan.</li>
+                    </ul>
+                </div>
+                <div class="job">
+                    <p class="company">PT Indomarco Prismatama (Indomaret Branch Manado)</p>
+                    <h3>Supervisor Development</h3>
+                    <p class="date">Juli 2017 - Januari 2023</p>
+                    <ul>
+                        <li>Memimpin dan mengembangkan tim penjualan, secara konsisten berhasil mencapai target penjualan bulanan.</li>
+                        <li>Menganalisis data penjualan untuk merancang strategi promosi lokal yang terbukti berhasil meningkatkan penjualan produk.</li>
+                    </ul>
+                </div>
+                <div class="job">
+                    <p class="company">PT Indomarco Prismatama (Indomaret Branch Bandung)</p>
+                    <h3>Chief of Store (Kepala Toko)</h3>
+                    <p class="date">Juli 2013 - Juni 2017</p>
+                    <ul>
+                        <li>Mengelola seluruh operasional harian toko, berhasil meningkatkan total penjualan tahunan.</li>
+                        <li>Bertanggung jawab penuh atas proses stock opname, berhasil menekan angka kehilangan barang (shrinkage) secara signifikan.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>PENDIDIKAN</h2>
+                <div class="job">
+                    <h3>SMK Putra Pajajaran, Bandung</h3>
+                    <p>Jurusan: Teknik Komputer dan Jaringan (Lulus 2013)</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
